@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+      "navigation": "/components/navigation/navigation"
+    },
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "运动日记",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+}

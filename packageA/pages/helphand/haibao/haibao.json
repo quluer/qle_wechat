@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+      "navigation": "/components/navigation/navigation"
+    },
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "邀请海报",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+}

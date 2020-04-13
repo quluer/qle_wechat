@@ -1,0 +1,21 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title="扫码付款明细"></navigation>
+<view class='mingxi-box'>
+    <view class='mingxi-con'>
+        <view class='mingxi-item'>
+            <view class='item-top'>
+                <view class='item-title'>{{remark}}</view>
+                <view class='item-sum'>{{moneynum}}</view>
+            </view>
+            <view class='item-bottom'>
+                <view class='mingxi-time-box'>
+                    <view class='time-tit'>时间</view>
+                    <view class='time-num'>{{create_time}}</view>
+                </view>
+                <view class='mingxi-merch-box'>
+                    <view class='merch-tit'>商户</view>
+                    <view class='merch-num'>{{merchname}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

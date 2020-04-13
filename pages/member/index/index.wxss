@@ -1,0 +1,467 @@
+page {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.user_box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.capacity {
+    width: 130rpx;
+    height: 130rpx; 
+    position: fixed; 
+    bottom: 23%;
+    right: 5%;
+}
+
+image {
+    width: 100%;
+    height: 100%;
+}
+.notlogin-box{
+    width: 100%;
+    height: 230rpx;
+    background: #fff;
+    position: relative
+}
+.notlogin-left{
+    width: 300rpx;
+    height: 120rpx;
+    /* background: #f00; */
+    position: absolute;
+    top: 10%;
+    left: 10%
+
+}
+button::after {
+    border: none;
+    background-color : transparent 
+}
+.notlogin-button{
+     width: 300rpx;
+    height: 120rpx;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 10%
+} 
+.notlogin-text{
+    color: #333;
+    font-size: 44rpx;
+    font-weight: bold;
+}
+.notlogin-subtitle{
+    color: #333;
+    font-size: 28rpx;
+    margin-top: 6rpx;
+}
+.notlogin-tubiao{
+    width: 185rpx;
+    height: 196rpx;
+    /* background: #0f0; */
+    position: absolute;
+    left: 70%;
+    top: 10%;
+}
+.user-info-box {
+    width: 97%;
+    height: 140rpx;
+    background: #fff;
+    padding-left: 3%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.info-detail {
+    width: 60%;
+    height: 118rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.avatar-img {
+    width: 118rpx;
+    height: 118rpx;
+    border-radius: 50%;
+}
+
+.avatar-img image {
+    border-radius: 50%;
+}
+
+.nickname-box {
+    width: 280rpx;
+    height: 100rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nickname {
+    width: 280rpx;
+    font-size: 38rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.level-img {
+    width: 130rpx;
+    height: 30rpx;
+}
+
+.dianzhu-img {
+    width: 86rpx;
+    height: 30rpx;
+}
+
+.bind-phone, .phone-form {
+    width: 240rpx;
+    height: 60rpx;
+    background: #e4fffa;
+    color: #00bc90;
+    font-size: 30rpx;
+    border-radius: 40rpx 0 0 40rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 28%;
+    right: 0;
+}
+
+.phone-form {
+    opacity: 0;
+}
+
+.phone-btn {
+    width: 240rpx;
+    height: 60rpx;
+    opacity: 0;
+}
+
+.income-box {
+    width: 94%;
+    height: 250rpx;
+    padding: 0 3%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reward-img, .calorie-img {
+    width: 358rpx;
+    height: 212rpx;
+    position: relative;
+}
+
+.reward-num, .calorie-num {
+    width: 280rpx;
+    height: 40rpx;
+    font-weight: bold;
+    color: #fff;
+    font-size: 40rpx;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-family: 'DIN Next LT Pro';
+}
+
+.reward-text, .calorie-text {
+    width: 280rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    color: #fff;
+    font-size: 24rpx;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.reward-balance-box, .calorie-balance-box {
+    width: 90%;
+    height: 40rpx;
+    color: #fff;
+    font-size: 28rpx;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.reward-balance-text, .calorie-balance-text {
+    color: #fff;
+    font-size: 28rpx;
+}
+
+.reward-balance-num, .calorie-balance-num {
+    color: #fff;
+    font-size: 30rpx;
+    margin-left: 15rpx;
+}
+
+.contributeBox {
+    width: 100%;
+    height: 110rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contribute-box {
+    width: 726rpx;
+    height: 88rpx;
+    position: relative;
+}
+
+.contribute-text {
+    height: 88rpx;
+    line-height: 88rpx;
+    font-size: 30rpx;
+    color: #fff;
+    position: absolute;
+    left: 13%;
+    top: 0;
+}
+
+.contribute-num, .contribute-open {
+    width: auto;
+    padding-right: 25rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    font-size: 30rpx;
+    color: #fff;
+    position: absolute;
+    right: 3%;
+    top: 0;
+}
+
+.contribute-num {
+    font-family: 'DIN Next LT Pro';
+}
+
+.order-box, .service-box {
+    width: 94%;
+    height: 260rpx;
+    padding: 0 3%;
+    background: #fff;
+}
+
+.order-tit-box {
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-tit {
+    width: 100rpx;
+    height: 60rpx;
+    font-size: 40rpx;
+    color: #1c1c1c;
+}
+
+.order-total-box {
+    width: auto;
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+}
+
+.read-totalorder {
+    color: #888;
+    font-size: 24rpx;
+}
+
+.right-img {
+    width: 34rpx;
+    height: 34rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rpx;
+}
+
+.nav-order {
+    width: 92%;
+    height: 160rpx;
+    padding: 0 4%;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item, .service-item {
+    width: 85rpx;
+    height: 110rpx; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dingdan-img{
+  width: 54rpx;
+  height: 54rpx;
+}
+
+.service-img {
+    position: relative;
+}
+
+.count-img {
+    width: 30rpx;
+    height: 30rpx;
+    background: #f01;
+    border-radius: 50%;
+    position: absolute;
+    top: -10rpx;
+    right: -10rpx;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22rpx;
+}
+
+.fukuan-text, .service-text {
+    color: #7a7a7a;
+    font-size: 26rpx
+}
+
+.swiper-card swiper{
+  width: 100%;
+  height: 190rpx
+}
+
+ .card_banner{
+   display: flex;
+   align-items: center;
+   background: #fff;
+ }
+
+ .card_entrance{
+   border-right: 1px solid rgb(243, 243, 243);
+   display: flex;
+   align-items: center;
+   margin-left: 8%;
+ }
+ .card_entranceImg{
+   width: 96rpx;
+   height: 90rpx;
+   margin-right: 15rpx;
+ }
+ .card_entranceTit{
+   font-size: 34rpx;
+   color: #1c1c1c;
+ }
+ 
+ .swiper-card{
+   height: 38rpx;
+   margin-top: 20rpx; 
+  }
+ .card_entranceT{
+   font-size: 20rpx;
+   color: #666666;
+ }
+
+.swiper-box{
+  position: relative;
+}
+
+.swiper-box swiper{
+  width: 375rpx;
+  height: 190rpx;
+}
+
+.dots{ 
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  bottom: 20rpx; 
+  display: flex; 
+  justify-content: center; 
+} 
+.dots .dot{ 
+  margin: 0 8rpx; 
+  width: 28rpx; 
+  height: 6rpx; 
+  background: #b7fdeb; 
+  border-radius: 8rpx; 
+  transition: all .6s; 
+} 
+.dots .dot.active{ 
+  background: #00d8a0; 
+}
+
+.service-box{
+    height: 420rpx;
+    margin-top: 20rpx;
+}
+
+.nav-service {
+    width: 92%;
+    height: 300rpx;
+    padding: 0 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service-item {
+    width: 22%;
+    height: 110rpx;
+}
+
+.cartoon{
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0,0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+.cartoonimg{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.cartoonImgA{
+  width: 566rpx;
+  height: 702rpx;
+}
+.cartoonImgB{
+  width: 422rpx;
+  height: 84rpx;
+  position: absolute;
+  left: 12%;
+  bottom: 6%;
+}
+.cartoonImgC{
+  width: 54rpx;
+  height: 54rpx; 
+  margin: 60rpx auto 0;
+}
+.cartoonImgD{
+  width: 580rpx;
+  height: 132rpx;
+  position: absolute;
+  left: 0;
+  top: -15%;
+}

@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+      "navigation": "/components/navigation/navigation"
+    },
+    "navigationBarTitleText": "系统公告",
+    "enablePullDownRefresh": true
+}

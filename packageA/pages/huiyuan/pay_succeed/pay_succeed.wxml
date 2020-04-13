@@ -1,0 +1,10 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title="支付成功"></navigation>
+
+<view class="expedite-box">
+  <view class="pay_succeedImgy">
+    <image src="{{globalimg}}/jiasu02@2x.png"></image>
+  </view>
+  <view class="pay_money">{{pay_money}}</view>
+  <view class="pay_time">{{pay_time}}</view>
+  <view class="pay_btn" bindtap="pay_btn">知道了</view>
+</view>

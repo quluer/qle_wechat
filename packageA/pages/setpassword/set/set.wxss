@@ -1,0 +1,178 @@
+page{
+    width: 100%;
+    height: 100%;
+    background: #f8f8f8;
+    overflow-x: hidden;
+}
+.set-box{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.speed_up_tit{
+  width: 100%;
+  height: 72rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 48rpx;
+  background: #f8f8f8;
+}
+.tit_content{
+  color: #666666;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+.speed_up_tit image{
+  width: 26rpx;
+  height: 28rpx;
+}
+
+.speed_up_content{
+  width: 85%;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  margin: 40rpx auto;
+  padding-left: 15rpx;
+  border-radius: 4rpx;
+  border: 1px solid rgb(214, 214, 214);
+  position: relative;
+}
+
+/* 点击时显示 */
+.speed_up_contentBtn{
+  background: rgb(254, 247, 241);
+  border: 1px solid rgb(252, 144, 82);
+}
+.content_leftsBtn{
+  color: rgb(252, 144, 82);
+}
+
+
+.content_lefts{
+  font-size: 60rpx;
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+.content_lefts::before{
+  content: "￥";
+  font-size: 30rpx;
+  font-weight: normal;
+}
+.content_rights{
+  font-size: 30rpx;
+  color: rgb(153, 153, 152);
+}
+
+.correct_img{
+  width: 52rpx;
+  height: 50rpx;
+  position: absolute;
+  right: -3rpx;
+  bottom: -3rpx;
+  display: none;
+}
+.correct_img image{
+  width: 100%;
+  height: 100%;
+}
+
+/* 立即支付按钮 */
+.pay_btn{
+  width: 85%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 10rpx;
+  margin: 100rpx auto;
+  color: #fff;
+  background: rgb(1, 215, 161);
+}
+.pay_btn::after{
+   border: none;
+}
+
+/* 处于加速期内弹窗 */
+.dialog_shade{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 1000;
+  background: rgb(0, 0, 0,0.5); 
+  /* display: none; */
+}
+
+.dialog_content{
+  width: 80%;
+  height: 28%;
+  background: #fff;
+  border-radius: 10%;
+  position: relative;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%,-50%);
+  padding-top: 60rpx;
+  text-align: center;
+}
+
+.expediteImg{
+  width: 118rpx;
+  height: 80rpx;
+  margin: 0rpx auto;
+}
+
+.tit_one{
+  color: #000;
+  font-size: 35rpx;
+  margin: 25rpx 0rpx;
+}
+.tit_two{
+  color: rgb(170, 170, 170);
+  font-size: 30rpx;
+  margin: 25rpx 0rpx;
+}
+
+.know_btn{
+  color: rgb(7, 215, 163);
+  font-size: 35rpx;
+  position: absolute;
+  bottom:8%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+/* .set-con{
+    width: 100%;
+    height: 150rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.set-con-center{
+    width: 620rpx;
+    height: 100rpx;
+    padding: 0 35rpx;
+    background: #fff;
+    border-radius: 5rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.set-text{
+    color: #333;
+    font-size: 34rpx
+}
+.set-img{
+    width: 16rpx;
+    height: 28rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+image{
+    width: 100%;
+    height: 100%
+} */

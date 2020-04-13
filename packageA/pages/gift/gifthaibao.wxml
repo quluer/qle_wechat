@@ -1,0 +1,14 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title="邀请海报"></navigation>
+<view class='conBox'>
+
+    <view class='bannerbox'>
+        <image class="bannerbox-img" src="{{url}}"></image>
+    </view>
+    <view class='imgBox'>
+        <view class='imgbtn' bindtap='onSavePicClick' data-img="{{url}}">
+            <image class="save-img" src='{{globalimg}}/download@2x.png'></image>
+            <view class="save-text">保存到相册</view>
+        </view>
+        
+    </view>
+</view>

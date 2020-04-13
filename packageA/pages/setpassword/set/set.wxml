@@ -1,0 +1,31 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title="购买限额"></navigation>
+<view class='set-box'>
+  <view class="speed_up_tit">
+    <image src="{{globalimg}}/limit.png"></image>
+    <text class="tit_content">RV可用交易额度：{{remain}}</text>
+  </view>
+
+  <view class="speed_up_content {{isSelect==item.id?'speed_up_contentBtn' : ''}}" wx:for="{{list}}" wx:key="index" bindtap="list_btn" data-id="{{item.id}}">
+
+    <text class="content_lefts {{isSelect==item.id?'content_leftsBtn' : ''}}">{{item.money}}</text>
+    <text class="content_rights">{{item.limit}}额度</text>
+
+    <view class="correct_img" style="{{isSelect==item.id?'display:block' : ''}}">
+      <image src="{{globalimg}}/select@2x.png"></image>
+    </view>
+  </view>
+
+  <!-- 立即支付按钮 -->
+
+  <button class="pay_btn" bindtap="pay_btn">立即支付</button>
+
+
+    <!-- <view class='set-con'>
+        <view class='set-con-center' bindtap='setbtn'>
+            <view class='set-text'>交易密码设置</view>
+            <view class='set-img'>
+                <image src='{{globalimg}}/open0@2x.png'></image>
+            </view>
+        </view>
+    </view>  -->
+</view>

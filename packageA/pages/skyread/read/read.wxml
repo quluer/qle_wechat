@@ -1,0 +1,17 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title="每日必读"></navigation>
+<view class="expedite-box">
+  
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <view class="listcss" bindtap="readbtn" data-id="{{item.id}}">
+      <view>
+        <text class="textcss">{{item.title}}</text>
+      </view>
+      
+      <view style="margin-left: 15rpx;">
+        <image class="titimg" src="{{item.img}}"></image>
+      </view>
+    </view>
+  </block>
+
+  <view class="finish_inquire" wx:if="{{isShow == 1?true:false}}">查询完了哦</view>
+</view>

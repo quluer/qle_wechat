@@ -1,0 +1,30 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title="跟我跑，送你钱"></navigation>
+<view class='conBox'>
+<view class='friend-box'>
+    <view class='power-finish'>捐赠成功！</view>
+     <view class='friend-goword'>每天助人一点点，生活真美好</view>
+    <view class='medal'><image src='{{globalimg}}/xunzhang.png'></image></view>
+</view>
+<view class='helpTitle'>{{bnickname}}的好友助力榜</view>
+<view class='banner-box'>
+    <image src='{{globalimg}}/body.png'></image>
+</view>
+<view class='banner-box-con'>
+    <view class='bannerCon'>
+        <view class='con-person' wx:for='{{helplist}}' wx:key='{{index}}'>
+            <view class='flexbox person-pic'><image class ='pic' src='{{item.avatar}}'></image></view>
+            <view class='person-nickname-box'>
+                <view class='per-nickname'>{{item.nickname}}</view>
+            <view class='per-signature'>
+            {{item.remark}}</view>
+            </view>
+            <view class='flexbox person-step'>{{item.step}}步</view>
+        </view>
+    </view>
+
+</view>
+<view class='bottom-box' >
+    <image src='{{globalimg}}/footpic.png'></image>
+</view>
+<view class='invite-friend-box' bindtap='playbtn' >新用户领红包</view>
+</view>

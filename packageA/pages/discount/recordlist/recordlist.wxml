@@ -1,0 +1,33 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title="收款记录"></navigation>
+<view class='record-box'>
+    <view class='record-header'>共查询到{{recordlist.total}}笔收款,累计{{totalmoney}}元</view>
+    <view class='listBox' wx:for='{{recordlist.list}}' wx:key='{{index}}'>
+        <view class='itemBox'>
+            <view class='create-time'>{{index}}</view>
+            <view class='create-detail-box'>
+                <view class='detail-top'>
+                    <view class='receive-count-box'>
+                        <view class='receive-text'>收款笔数</view>
+                        <view class='receive-num'>{{item.count}}</view>
+                    </view>
+                    <view class='money-count-box'>
+                        <view class='receive-text'>合计</view>
+                        <view class='receive-num'>￥{{item.total}}</view>
+                    </view>
+                </view>
+                <view class='detail-bottom'  wx:for='{{item.list}}' wx:key='{{k}}'>
+                    <view class='detail-list'>
+                        <view class='receive-count-box'>
+                            <view class='receive-name'>{{item.nickname}}</view>
+                            <view class='receive-time'>{{item.createtime}}</view>
+                        </view>
+                        <view class='money-count-box'>
+                            <!-- <view class='receive-text'>合计</view> -->
+                            <view class='receive-num'>￥{{item.price}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

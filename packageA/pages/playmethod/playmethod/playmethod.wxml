@@ -1,0 +1,56 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title="新手攻略"></navigation>
+<view class='play-box'>
+    <view class='play-nav-box'>
+        <view class="swiper-tab">
+            <view bindtap="myTab" class="swiper-tab-item {{type==1?'active':''}}" data-type="1">热点关注</view>
+            <view class='nav-line'></view>
+            <view bindtap="myTab" class="swiper-tab-item {{type==2?'active':''}}" data-type="2">帮助指南</view>
+        </view>
+        <view class='nav-service'>
+            <view class='kefu-img'>
+                <image src='{{globalimg}}/kefu@2x.png'></image>
+            </view>
+            <view class='kefu-text'>在线客服</view>
+        </view>
+        <button class="contact02" openType="contact" sessionFrom="weapp" showMessageCard="true"></button>
+    </view>
+    <view class="{{type==1 ? 'show':'hidden'}}">
+        <scroll-view>
+            <view class='hot-box'>
+                <view class='item_box' wx:for="{{list}}" wx:key="{{index}}">
+                    <view class='strategy-box' wx:if="{{item.type==0}}" bindtap='detailbtn' data-id='{{item.id}}'>
+                        <view class='strategy-img'>
+                            <image src='{{item.photo}}'></image>
+                        </view>
+                        <view class='strategy-text'>{{item.title}}</view>
+                    </view>
+                    <view class='video-box' wx:if="{{item.type==1}}">
+                        <view class='video'>
+                            <video style="width: 662rpx;height:282rpx;margin:1px;" src="{{item.video}}" binderror="videoErrorCallback" poster='{{item.photo}}' controls objectFit='contain' bindtap='playvideo'></video>
+                            <!-- <view class='video-time'>05:36</view> -->
+                        </view>
+                        <view class='video-desc'>{{item.title}}</view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="{{type==2 ? 'show':'hidden'}}">
+        <scroll-view>
+            <view class='guide-box'>
+                <view class='guide-item-box' wx:for="{{helplist}}" bindtap='helpdetailbtn' data-id='{{item.id}}'>
+                    <view class='item-text'>{{item.title}}</view>
+                    <view class='item-img'>
+                        <image src='{{globalimg}}/xiangyou-xi.png'></image>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <view class='feedback-box' bindtap='feedbackbtn'>
+            <view class='feedback-img'>
+                <image src='{{globalimg}}/yijian@2x.png'></image>
+            </view>
+            <view class='feedback-text'>找不到你的问题,请点击这里反馈</view>
+        </view>
+    </view>
+</view>

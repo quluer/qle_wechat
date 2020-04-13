@@ -1,0 +1,23 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title="运动日记"></navigation>
+<view class='sportBox'>
+<view class='sportBanner' style='display:{{sportDis}}'>
+    <image src="{{url}}"></image>
+</view>
+<view class='exBanner' style='display:{{exchangeDis}}'>
+    <image src="{{url}}"></image>
+</view>
+<view class='sportImg'>
+<view class='exchangeBtn' bindtap='exchange'>
+    <view class='imgBox'>
+        <image src='{{globalimg}}/exchange.png'></image>
+    </view>
+    <view class='desc'>换个样式</view>
+</view>
+<view class='exchangeBtn' bindtap='onSavePicClick' data-img="{{url}}">
+    <view class='imgBox'>
+        <image src='{{globalimg}}/download.png'></image>
+    </view>
+    <view class='desc'>保存到相册</view>
+</view>
+</view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/playmethod/hotdetail/hotdetail.wxml-->
+<navigation id='Navigation' show-icon='{{showIcon}}' title="文章详情"></navigation>
+<view class='hotdetail-box'>
+    <view class='detail-tit'>{{title}}</view>
+    <view class='detail-time'>{{createtime}}</view>
+    <import src="../../../../utils/wxParse/wxParse.wxml" />
+    <view class="wxParse explain-main">
+        <template is="wxParse" data="{{wxParseData:wxParseData.nodes}}" />
+    </view>
+</view>

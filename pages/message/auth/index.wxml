@@ -1,0 +1,18 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title=""></navigation>
+<view class="page">
+    <view class="inner">
+        <view class="image">
+            <image src="{{globalimg}}/impower.png"></image>
+        </view>
+        <block>
+            <block wx:if="{{!close}}">
+                <button bindgetuserinfo="getUserInfo" class="btn" open-type="getUserInfo"></button>
+            </block>
+        </block>
+        <block>
+            <block wx:if="{{close}}">
+                <view class="text">{{text}}</view>
+            </block>
+        </block>
+    </view>
+</view>

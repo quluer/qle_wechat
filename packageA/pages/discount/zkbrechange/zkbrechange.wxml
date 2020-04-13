@@ -1,0 +1,25 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title="折扣宝兑换"></navigation>
+<view class='rechange_box'>
+    <view class='rechange-con'>
+        <view class='kll-balance-box'>
+            <view class='kll-img'>
+                <image src='{{globalimg}}/kaluli@2x.png'></image>
+            </view>
+            <view class='kll-text'>卡路里余额：￥{{usercredit}}</view>
+        </view>
+        <view class='kll-desc'>1卡路里
+            <text class='kll-symbol'>=</text>2折扣宝</view>
+        <view class='empty-box'>
+            <view class='empty'></view>
+            <view class='empty-text'>兑换金额</view>
+            <view class='hint-text' style='display:{{hintDis}}'>卡路里余额不足,请重新输入</view>
+        </view>
+        <view class='ipt-box'>
+            <text class='ipt-symbol'>￥</text>
+            <input bindinput='watchPassWord'  class='rechangeipt' type='text' placeholder='输入金额'></input>
+        </view>
+        <view class='rechange-btnbox' bindtap='rechargebtn'>
+            <button class='rechangebtn'>兑换</button>
+        </view>
+    </view>
+</view>

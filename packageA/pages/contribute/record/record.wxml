@@ -1,0 +1,14 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title="变动记录"></navigation>
+<view class='record_box'>
+    <view class='record-con'>
+        <view class='record-item' wx:for="{{list}}" wx:key="{{index}}">
+            <view class='item-left'>
+                <view class='item-title'>{{item.remark}}</view>
+                <view class='item-time'>{{item.createtime}}</view>
+            </view>
+            <view class='item-right' wx:if="{{item.num-0>0}}">+{{item.num}}</view>
+            <view class='item-right01' wx:if="{{item.num-0<0}}">{{item.num}}</view>
+        </view>
+    </view>
+</view>
+<view class='record_mask' style='display:{{maskDis}}'><view class='nodata'>暂无数据哦</view></view>

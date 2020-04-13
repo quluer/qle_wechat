@@ -1,0 +1,49 @@
+<navigation id='Navigation' show-icon='{{showIcon}}' title="余额账户"></navigation>
+<view class="balanceBox">
+    <view class='balance-header'>
+        <image src='{{globalimg}}/yue1.png'></image>
+        <view class='balance-header-top'>
+            <view class='top-text'>可用余额</view>
+            <view class='top-num'>{{credit2}}</view>
+        </view>
+        <view class='balance-header-bottom'>
+            <view class='bottom-left'>
+                <view class='income-text'>累计收入</view>
+                <view class='income-num'>{{come_total}}</view>
+            </view>
+            <view class='bottom-left'>
+                <view class='income-text'>冻结中</view>
+                <view class='income-num'>{{frozen_credit2}}</view>
+            </view>
+            <view class='bottom-right'>
+                <view class='income-text'>已提现</view>
+                <view class='income-num'>{{balance_total}}</view>
+            </view>
+        </view>
+    </view>
+
+    <view style="position: relative;">
+      <view class='balance-foot'>
+          <view class='foot-con' >
+              <view class='imgBox'>
+                  <image src='{{globalimg}}/tixian.png'></image>
+              </view>
+              <view class='imgCon'>提现</view>
+          </view>
+          <view class='foot-con' >
+              <view class='imgBox'>
+                  <image src='{{globalimg}}/mingxi.png'></image>
+              </view>
+              <view class='imgCon'>明细</view>
+          </view>
+      </view>
+      <view class='form-foot'>
+          <form bindsubmit="form_submit" report-submit='true' class='footerForm' bindtap='txBtn'>
+              <button form-type="submit" class='navbtn'></button>
+          </form>
+          <form bindsubmit="form_submit" report-submit='true' class='footerForm' bindtap='mxBtn'>
+              <button form-type="submit" class='navbtn'></button>
+          </form>
+      </view>
+    </view>
+</view>
